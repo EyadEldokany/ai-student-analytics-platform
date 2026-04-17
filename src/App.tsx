@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { AppProvider, useApp, t } from './contexts/AppContext';
 import Header from './components/Header';
 import DataInput from './components/DataInput';
@@ -104,6 +105,7 @@ export default function App() {
   return (
     <AppProvider>
       <AppContent />
+      <SpeedInsights />
     </AppProvider>
   );
 }
